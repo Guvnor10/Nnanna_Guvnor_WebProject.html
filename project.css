@@ -159,7 +159,7 @@ main {
 
 desc {
     font-family: Georgia, "Times New Roman", serif;
-    display: block;
+    display: flex;
     text-align: center;
     padding: 20px;
 }
