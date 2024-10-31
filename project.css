@@ -168,6 +168,18 @@ a {	text-decoration: none;
 	color: #FFFFFF; 
 }
 
+.product-grid table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.product-grid td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
 .products {
     display: flex;
     justify-content: space-around;
@@ -181,10 +193,16 @@ a {	text-decoration: none;
 .product img {
     width: 250px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
 }
 
 .product p {
     font-size: 18px;
+    color: #FFFFFF;
     margin-top: 10px;
 }
 
