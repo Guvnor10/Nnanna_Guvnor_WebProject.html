@@ -157,7 +157,7 @@ main {
 }
 
 desc {
-    display: flex;
+    display: block;
     text-align: center;
     padding: 20px;
 }
