@@ -158,6 +158,7 @@ main {
 }
 
 desc {
+    font-family: Georgia, "Times New Roman", serif;
     display: block;
     text-align: center;
     padding: 20px;
