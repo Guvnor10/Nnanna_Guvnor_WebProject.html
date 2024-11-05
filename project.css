@@ -306,7 +306,7 @@ th {
 #gallery li {
     display: flex;
     float: left;
-    padding: 40px;
+    padding: 10px;
 }
 
 #gallery img {
@@ -328,7 +328,7 @@ th {
 #gallery a:hover span {
     position: absolute;
     top: 16px;
-    right: 20px;
+    right: 320px;
     text-align: center;
     opacity: 1;
 }}
