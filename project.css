@@ -304,7 +304,7 @@ th {
 }
 
 #gallery li {
-    display: inline-block;
+    display: flex;
     float: left;
     padding: 40px;
 }
@@ -328,7 +328,7 @@ th {
 #gallery a:hover span {
     position: absolute;
     top: 16px;
-    left: 20px;
+    right: 20px;
     text-align: center;
     opacity: 1;
-}
+}}
