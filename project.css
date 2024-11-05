@@ -193,7 +193,7 @@ a {	text-decoration: none;
 
 .product img {
     width: 250px;
-    padding: 40px;
+    padding: 30px;
     height: auto;
     transition: transform 0.3s ease;
 }
