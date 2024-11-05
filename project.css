@@ -181,6 +181,7 @@ a {	text-decoration: none;
 }
 
 .products {
+    font-family: Georgia, "Times New Roman", serif;
     display: flex;
     justify-content: space-around;
     width: 80%;
