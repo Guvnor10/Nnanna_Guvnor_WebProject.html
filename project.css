@@ -320,14 +320,14 @@ th {
 
 #gallery span {
     position: sticky;
-    left: -1000px;
+    right: -1000px;
     opacity: 0;
     transition: opacity 3s ease-in-out;
 }
 
 #gallery a:hover span {
     position: sticky;
-    top: 1px;
+    top: 10px;
     right: 1000px;
     text-align: center;
     opacity: 1;
