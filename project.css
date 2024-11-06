@@ -385,3 +385,52 @@ details[open] {
 }
 
 -- DETAILS AND SUMMARY WIDGET FOR FAQ -- 
+
+-- DETAILS AND SUMMARY WIDGET FOR ABOUT US -- 
+
+.aboutus-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+details {
+    margin-bottom: 10px;
+    background-color: #887f7f;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+}
+
+summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FEF6C2;
+    justify-content: center;
+}
+
+details p {
+    padding-top: 10px;
+    font-size: 1em;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+details a {
+    color: #FEF6C2;
+    text-decoration: underline;
+}
+
+details:hover {
+    background-color: #555;
+}
+
+details[open] {
+    background-color: #575757;
+}
+
+-- DETAILS AND SUMMARY WIDGET FOR ABOUT US -- 
