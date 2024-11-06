@@ -327,7 +327,8 @@ th {
 
 #gallery a:hover span {
     position: sticky;
-    right: 320px;
+    top: 1px;
+    right: 1000px;
     text-align: center;
     opacity: 1;
 }}
