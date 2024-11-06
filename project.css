@@ -328,7 +328,7 @@ th {
 }
 
 #gallery a:hover span {
-    position: relative;
+    position: fixed;
     top: 16px;
     left: 320px;
     text-align: center;
