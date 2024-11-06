@@ -319,14 +319,14 @@ th {
 }
 
 #gallery span {
-    position: absolute;
+    position: sticky;
     left: -1000px;
     opacity: 0;
     transition: opacity 3s ease-in-out;
 }
 
 #gallery a:hover span {
-    position: relative;
+    position: sticky;
     top: 16px;
     right: 320px;
     text-align: center;
