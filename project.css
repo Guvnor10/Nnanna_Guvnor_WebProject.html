@@ -197,6 +197,21 @@ a {	text-decoration: none;
     display: inline-block; /* Centers the button within the product */
 }
 
+.product form input[type="submit"] {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: 2px solid red; /* Red outline */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size if needed */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.product form input[type="submit"]:hover {
+    background-color: red; /* Change background to red on hover */
+    color: black; /* Change text to black on hover */
+}
+
 .product img {
     width: 250px;
     padding: 30px;
