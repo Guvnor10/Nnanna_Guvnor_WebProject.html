@@ -439,3 +439,20 @@ details[open] {
 }
 
 -- DETAILS AND SUMMARY WIDGET FOR ABOUT US -- 
+
+
+.view-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Customize color */
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.view-cart-btn:hover {
+    background-color: #45a049;
+}
