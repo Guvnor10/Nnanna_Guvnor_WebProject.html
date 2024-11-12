@@ -192,6 +192,11 @@ a {	text-decoration: none;
     text-align: center;
 }
 
+.product form {
+    margin-top: 10px; /* Adds spacing between the price and the button */
+    display: inline-block; /* Centers the button within the product */
+}
+
 .product img {
     width: 250px;
     padding: 30px;
