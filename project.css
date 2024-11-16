@@ -459,35 +459,32 @@ details[open] {
 
 -- PRODUCT PAGE CODE --
 
-/* Product Container */
 .product-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
     align-items: center;
-    justify-content: center;
-    padding: 50px;
+    justify-items: center;
     gap: 20px;
+    padding: 50px;
 }
 
 /* Product Image */
-.product-image img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.product-image {
+    justify-self: start; /* Align the image to the left */
 }
 
 /* Product Details */
 .product-details {
+    text-align: left; /* Align text to the left */
     max-width: 500px;
     color: white;
     font-family: Georgia, "Times New Roman", serif;
+    justify-self: start; /* Align details within the right column */
 }
 
 .product-details h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    text-align: left;
 }
 
 .product-details p {
