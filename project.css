@@ -456,3 +456,74 @@ details[open] {
 .view-cart-btn:hover {
     background-color: #45a049;
 }
+
+-- PRODUCT PAGE CODE --
+
+/* Product Container */
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+/* Product Image */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Details */
+.product-details {
+    max-width: 500px;
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.product-details h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.product-details p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product-actions button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-now {
+    background-color: #ff4500;
+    color: white;
+}
+
+.buy-now:hover {
+    background-color: #e63e00;
+}
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: white;
+}
+
+.add-to-cart:hover {
+    background-color: #3e8e41;
+}
