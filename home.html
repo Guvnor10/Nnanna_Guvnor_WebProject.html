@@ -8,44 +8,41 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
-
-
-	    <div id="background">
-            <header>
+    <div id="background">
+        <header>
             <div class="logo">
                 <img src="routeboymain.png" alt="Routeboy Logo">
-       	</div>
-		<nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="products.html" class="dropbtn">Products</a>
-                    <div class="dropdown-content">
-                        <a href="tops.html">Tops</a>
-                        <a href="bottoms.html">Bottoms</a>
-                        <a href="accessories.html">Accessories</a>
-			            <a href="newarrivals.html">New Arrivals</a>
-                    </div>
-                </li>
-                <li><a href="accounts.html">Account</a></li>
-                <li><a href="cart.html">Cart</a></li>
-		<li class="dropdown">
-                    <a href="aboutus.html" class="dropbtn">About Us</a>
-		    <div class="dropdown-content">
-			<a href="privacypolicy.html">privacy policy</a>
-                	<a href="refundpolicy.html">refund policy</a>
-                	<a href="shippingpolicy.html">shipping policy</a>
-                	<a href="faq.html">faq</a>
-                	<a href="contactus.html">contact us</a>
-		    </div>
-            </ul>
-        </nav>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="dropbtn">Products</a>
+                        <div class="dropdown-content">
+                            <a href="tops.html">Tops</a>
+                            <a href="bottoms.html">Bottoms</a>
+                            <a href="accessories.html">Accessories</a>
+                            <a href="newarrivals.html">New Arrivals</a>
+                        </div>
+                    </li>
+                    <li><a href="accounts.html">Account</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li class="dropdown">
+                        <a href="aboutus.html" class="dropbtn">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="privacypolicy.html">privacy policy</a>
+                            <a href="refundpolicy.html">refund policy</a>
+                            <a href="shippingpolicy.html">shipping policy</a>
+                            <a href="faq.html">faq</a>
+                            <a href="contactus.html">contact us</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </header>
-		
-	<h1>
-	best-sellers
-	</h1>
-	
+
+        <h1>best-sellers</h1>
+
         <main>
             <section class="products">
                 <table>
@@ -66,7 +63,7 @@
                                 <p>free slime tee <span>$65</span></p>
                             </div>
                         </td>
-			            <td>
+                        <td>
                             <div class="product">
                                 <a href="routeboyblackmeshshorts.html">
                                     <img src="routeboymeshshorts.png" alt="Routeboy Black Mesh Hoochie Shorts">
@@ -74,7 +71,8 @@
                                 <p>"routeboy" mesh black shorts <span>$50</span></p>
                             </div>
                         </td>
-		        </table>
+                    </tr>
+                </table>
             </section>
         </main>
 
@@ -87,10 +85,27 @@
                 <a href="contactus.html">contact us</a>
             </div>
             <div class="subscribe">
-		<a href="subscribe.html">subscribe</a>
+                <a href="subscribe.html">subscribe</a>
             </div>
             <p>&copy; 2024, routeboy</p>
         </footer>
     </div>
+
+    <!-- Added time accessed section -->
+    <div style="text-align: center; margin-top: 20px;">
+        <p>You accessed this page on:</p>
+        <div id="time"></div>
+    </div>
+
+    <script>
+        // Get the current date and time
+        const currentTime = new Date();
+
+        // Format the date and time
+        const formattedTime = currentTime.toLocaleString();
+
+        // Display it on the page
+        document.getElementById('time').innerText = formattedTime;
+    </script>
 </body>
 </html>
