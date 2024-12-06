@@ -8,60 +8,58 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
-    
-
-	<div id="background">
+    <div id="background">
         <header>
             <div class="logo">
                 <a href="index.html">
                     <img src="routeboymain.png" alt="Routeboy Logo">
                 </a>
-       	</div>
-		<nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="products.html" class="dropbtn">Products</a>
-                    <div class="dropdown-content">
-                        <a href="tops.html">Tops</a>
-                        <a href="bottoms.html">Bottoms</a>
-                        <a href="accessories.html">Accessories</a>
-			<a href="newarrivals.html">New Arrivals</a>
-                    </div>
-                </li>
-                <li><a href="accounts.html">Account</a></li>
-                <li><a href="cart.html">Cart</a></li>
-		<li class="dropdown">
-                    <a href="aboutus.html" class="dropbtn">About Us</a>
-		    <div class="dropdown-content">
-			<a href="privacypolicy.html">privacy policy</a>
-                	<a href="refundpolicy.html">refund policy</a>
-                	<a href="shippingpolicy.html">shipping policy</a>
-                	<a href="faq.html">faq</a>
-                	<a href="contactus.html">contact us</a>
-		    </div>
-            </ul>
-        </nav>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="dropbtn">Products</a>
+                        <div class="dropdown-content">
+                            <a href="tops.html">Tops</a>
+                            <a href="bottoms.html">Bottoms</a>
+                            <a href="accessories.html">Accessories</a>
+                            <a href="newarrivals.html">New Arrivals</a>
+                        </div>
+                    </li>
+                    <li><a href="accounts.html">Account</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li class="dropdown">
+                        <a href="aboutus.html" class="dropbtn">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="privacypolicy.html">privacy policy</a>
+                            <a href="refundpolicy.html">refund policy</a>
+                            <a href="shippingpolicy.html">shipping policy</a>
+                            <a href="faq.html">faq</a>
+                            <a href="contactus.html">contact us</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </header>
-		
-        <main>
-	<section>
         
-	<h1>LOGIN</h1>
+        <main>
+            <section>
+                <h1>LOGIN</h1>
 
-		<form method="login_process" action="https://webdevbasics.net/scripts/demo.php">
-    <label for="email">E-mail*</label>
-    <input type="email" id="email" name="email" required placeholder="Enter your email">
-    
-    <label for="password">Password*</label>
-    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <form id="login-form" method="post" action="https://webdevbasics.net/scripts/demo.php">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
 
-    <button type="submit">
-        Sign In
-    </button>
-</form>
-
-        </section>
+                    <button type="submit">
+                        Sign In
+                    </button>
+                </form>
+                <div id="error-message" style="color: red; margin-top: 10px;"></div>
+            </section>
         </main>
 
         <footer>
@@ -73,9 +71,9 @@
                 <a href="contactus.html">contact us</a>
             </div>
             <div class="subscribe">
-		<a href="subscribe.html">subscribe</a>
+                <a href="subscribe.html">subscribe</a>
             </div>
-            <p>&copy; 2024, routeboy</p>
+            <p>&copy; 2024, Routeboy</p>
         </footer>
 
         <div class="time-accessed">
@@ -85,6 +83,30 @@
     </div>
 
     <script>
+        // Form Validation Script
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            // Clear previous errors
+            errorMessage.innerText = "";
+
+            // Validate email
+            if (!email.includes("@") || !email.includes(".")) {
+                errorMessage.innerText = "Please enter a valid email address.";
+                event.preventDefault(); // Stop form submission
+                return;
+            }
+
+            // Validate password (minimum 6 characters)
+            if (password.length < 6) {
+                errorMessage.innerText = "Password must be at least 6 characters long.";
+                event.preventDefault(); // Stop form submission
+                return;
+            }
+        });
+
         // Display current date and time
         const currentTime = new Date();
         const formattedTime = currentTime.toLocaleString();
