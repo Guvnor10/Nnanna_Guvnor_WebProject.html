@@ -232,6 +232,7 @@ footer {
     margin-bottom: 20px;
 }
 
+
 .footer-links a {
     text-decoration: none;
     color: white;
@@ -523,4 +524,11 @@ details[open] {
 
 .add-to-cart:hover {
     background-color: #3e8e41;
+}
+
+.time-accessed {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
