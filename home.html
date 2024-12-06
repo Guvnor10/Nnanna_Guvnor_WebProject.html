@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Welcome to Routeboy – your destination for bold, trendsetting fashion. Explore our best-sellers and shop apparel designed for your unique style.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Routeboy Home</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="project.css">
@@ -41,38 +42,40 @@
             </nav>
         </header>
 
-        <h1>best-sellers</h1>
+        <h1>Welcome to Routeboy</h1>
 
         <main>
             <section class="products">
-                <table>
-                    <tr>
-                        <td>
-                            <div class="product">
-                                <a href="routeboystapletee.html">
-                                    <img src="routeboygreentee.png" alt="routeboy staple tee">
-                                </a>
-                                <p>"routeboy" staple tee <span>$45</span></p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="product">
-                                <a href="routeboyfreeslimetee.html">
-                                    <img src="routeboyfreeslimetee.png" alt="routeboy slime tee">
-                                </a>
-                                <p>free slime tee <span>$65</span></p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="product">
-                                <a href="routeboyblackmeshshorts.html">
-                                    <img src="routeboymeshshorts.png" alt="Routeboy Black Mesh Hoochie Shorts">
-                                </a>
-                                <p>"routeboy" mesh black shorts <span>$50</span></p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                <div class="product-grid">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="product">
+                                    <a href="routeboystapletee.html">
+                                        <img src="routeboygreentee.png" alt="Routeboy staple tee">
+                                    </a>
+                                    <p>"routeboy" staple tee <span>$45</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product">
+                                    <a href="routeboyfreeslimetee.html">
+                                        <img src="routeboyfreeslimetee.png" alt="Routeboy slime tee">
+                                    </a>
+                                    <p>free slime tee <span>$65</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product">
+                                    <a href="routeboyblackmeshshorts.html">
+                                        <img src="routeboymeshshorts.png" alt="Routeboy Black Mesh Shorts">
+                                    </a>
+                                    <p>"routeboy" mesh black shorts <span>$50</span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
         </main>
 
@@ -89,22 +92,18 @@
             </div>
             <p>&copy; 2024, routeboy</p>
         </footer>
-    </div>
 
-    <!-- Added time accessed section -->
-    <div style="text-align: center; margin-top: 20px;">
-        <p>You accessed this page on:</p>
-        <div id="time"></div>
+        <!-- Time Accessed Section -->
+        <div class="time-accessed">
+            <p>You accessed this page on:</p>
+            <div id="time"></div>
+        </div>
     </div>
 
     <script>
-        // Get the current date and time
+        // Display current date and time
         const currentTime = new Date();
-
-        // Format the date and time
         const formattedTime = currentTime.toLocaleString();
-
-        // Display it on the page
         document.getElementById('time').innerText = formattedTime;
     </script>
 </body>
