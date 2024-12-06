@@ -107,5 +107,18 @@
             <p>&copy; 2024, routeboy</p>
         </footer>
     </div>
+
+    <div class="time-accessed">
+            <p>You accessed this page on:</p>
+            <div id="time"></div>
+        </div>
+    </div>
+
+    <script>
+        // Display current date and time
+        const currentTime = new Date();
+        const formattedTime = currentTime.toLocaleString();
+        document.getElementById('time').innerText = formattedTime;
+    </script>
 </body>
 </html>
