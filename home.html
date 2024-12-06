@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Welcome to Routeboy – your destination for bold, trendsetting fashion. Explore our best-sellers and shop apparel designed for your unique style.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Routeboy Home</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
     <div id="background">
+
         <header>
             <div class="logo">
                 <a href="index.html">
                     <img src="routeboymain.png" alt="Routeboy Logo">
                 </a>
-       	    </div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="home.html">Home</a></li>
@@ -44,7 +43,11 @@
             </nav>
         </header>
 
-        <h1>Welcome to Routeboy</h1>
+        <!-- Featured Product Section -->
+        <div id="featured-product" style="text-align: center; padding: 20px; margin: 20px; background-color: #333; color: white;">
+            <h2>Featured Product</h2>
+            <p id="product-name">Routeboy Mesh Shorts</p>
+        </div>
 
         <main>
             <section class="products">
@@ -92,10 +95,9 @@
             <div class="subscribe">
                 <a href="subscribe.html">subscribe</a>
             </div>
-            <p>&copy; 2024, routeboy</p>
+            <p>&copy; 2024, Routeboy</p>
         </footer>
 
-        <!-- Time Accessed Section -->
         <div class="time-accessed">
             <p>You accessed this page on:</p>
             <div id="time"></div>
@@ -103,6 +105,15 @@
     </div>
 
     <script>
+        // Dynamic Content Update
+        const products = ["Routeboy Mesh Shorts", "Routeboy Hoodie", "Routeboy Slime Tee", "RouteRunner Sweater"];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % products.length; // Cycle through products
+            document.getElementById("product-name").innerText = products[index];
+        }, 3000); // Update every 3 seconds
+
         // Display current date and time
         const currentTime = new Date();
         const formattedTime = currentTime.toLocaleString();
